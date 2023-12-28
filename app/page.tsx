@@ -1,7 +1,9 @@
 import Banner from "./components/Banner";
 import Categories from "./components/Categories";
 import Features from "./components/Features";
-import TopNewArrivel from "./components/TopNewArrivel";
+import Products from "./components/Products";
+import SalesImage from "./components/SalesImage";
+import { products, recommendedProducts } from "./staticData";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
       <Banner />
       <Features />
       <Categories />
-      <TopNewArrivel />
+      <Products products={products} title="Top New Arrivel" />
+      <SalesImage />
+      <Products products={recommendedProducts} title="Recomanded For You" />
     </>
   );
 }

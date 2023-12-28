@@ -1,19 +1,24 @@
-import { productsLinks } from "../staticData";
+import { Product } from "../_types";
 import SingleProduct from "./SingleProduct";
 
-const TopNewArrivel = () => {
+interface ProductsData {
+  title: string;
+  products: Product[];
+}
+
+const Products = ({ title, products }: ProductsData) => {
   return (
     <article className="container pb-16">
       <h2 className="text-2xl md:text-3xl font-medium text-gray-800 uppercase mb-6">
-        Top New Arrivel
+        {title}
       </h2>
       <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 cursor-pointer">
-        {productsLinks.map((product) => (
+        {products.map((product) => (
           <SingleProduct
             key={product.title}
             title={product.title}
             productImage={product.productImage}
-            salePrice={product.salesPrice}
+            salesPrice={product.salesPrice}
             basePrice={product.basePrice}
             quantity={product.quantity}
           />
@@ -23,4 +28,4 @@ const TopNewArrivel = () => {
   );
 };
 
-export default TopNewArrivel;
+export default Products;
