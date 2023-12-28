@@ -18,13 +18,14 @@ const config: Config = {
         roboto: ["var(--font-roboto)"],
       },
       colors: {
-        primary: '#FD3D57'
+        primary: "#FD3D57",
       },
       screens: {
-        sm: "575",
-        md: "768",
-        lg: "992",
-        xl: "1200",
+        sm: "575px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px",
+        "2xl": "1440px",
       },
       container: {
         center: true,
