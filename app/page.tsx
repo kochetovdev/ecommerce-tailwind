@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Categories from "./components/Categories";
 import Features from "./components/Features";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Banner />
       <Features />
+      <Categories />
     </>
   );
 }
