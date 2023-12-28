@@ -3,6 +3,7 @@ import { Poppins, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -30,7 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${roboto.variable} font-poppins`}>
+      <body
+        className={`${poppins.variable} ${roboto.variable} font-poppins container`}
+      >
         <Header />
         <Navbar />
         <main>{children}</main>

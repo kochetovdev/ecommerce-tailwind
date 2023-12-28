@@ -33,7 +33,7 @@ const dropdownItems = [
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 hidden lg:block">
-      <div className="container">
+      <div className="container max-w-[1200px]">
         <div className="flex">
           <div className="px-8 py-4 bg-primary flex items-center cursor-pointer group relative">
             <GiHamburgerMenu className="text-white" />
