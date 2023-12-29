@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-12 grid md:grid-cols-1 gap-8 xl:mt-0 lg:col-span-2">
-            <div className="text-center md:text-left md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center lg:text-left md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {footerColumns.map((column) => (
                 <FooterColumn key={column.title} footerColumn={column} />
               ))}

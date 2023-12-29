@@ -1,12 +1,12 @@
 import { Product } from "../_types";
 import SingleProduct from "./SingleProduct";
 
-interface ProductsData {
+interface Props {
   title: string;
   products: Product[];
 }
 
-const Products = ({ title, products }: ProductsData) => {
+const Products = ({ title, products }: Props) => {
   return (
     <article className="container pb-16">
       <h2 className="text-2xl md:text-3xl font-medium text-gray-800 uppercase mb-6">
