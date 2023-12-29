@@ -6,8 +6,9 @@ import product5 from "../../public/images/products/product5.jpg";
 import product6 from "../../public/images/products/product6.jpg";
 import product7 from "../../public/images/products/product7.jpg";
 import product8 from "../../public/images/products/product8.jpg";
+import { Product } from "../_types";
 
-export const products = [
+export const products: Product[] = [
   {
     title: "Sofa",
     productImage: product1,
@@ -38,7 +39,7 @@ export const products = [
   },
 ];
 
-export const recommendedProducts = [
+export const recommendedProducts: Product[] = [
   {
     title: "Sofa",
     productImage: product1,
@@ -75,7 +76,7 @@ export const recommendedProducts = [
     quantity: 32,
   },
   {
-    title: "Ergonomic Chair",
+    title: "Ergo Chair",
     productImage: product6,
     salesPrice: "$45",
     basePrice: "$56",

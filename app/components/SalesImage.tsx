@@ -4,11 +4,11 @@ import offer from "../../public/images/offer.jpg";
 
 const SalesImage = () => {
   return (
-    <>
+    <article className="mb-8">
       <Link href="/">
         <Image src={offer} alt="image-offer" className="w-full" />
       </Link>
-    </>
+    </article>
   );
 };
 
