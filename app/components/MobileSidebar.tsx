@@ -49,6 +49,7 @@ const MobileSidebar = ({ statusSidebar, onChangeStatus }: Props) => {
         <div>
           {sidebarLinks.map(({ title, href }) => (
             <Link
+              key={title}
               href={href}
               className="block px-4 py-4 font-medium transition hover:bg-gray-200"
             >
