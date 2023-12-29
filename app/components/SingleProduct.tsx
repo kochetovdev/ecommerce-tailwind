@@ -8,7 +8,7 @@ import { Product } from "../_types";
 const SingleProduct = ({
   productImage,
   title,
-  salePrice,
+  salesPrice,
   basePrice,
   quantity,
 }: Product) => {
@@ -39,7 +39,7 @@ const SingleProduct = ({
         </Link>
         <div className="flex items-baseline mb-1 space-x-2">
           <p className="text-xl text-primary font-roboto font-semibold">
-            {salePrice}
+            {salesPrice}
           </p>
           <p className="text-sm text-gray-400 font-roboto line-through">
             {basePrice}

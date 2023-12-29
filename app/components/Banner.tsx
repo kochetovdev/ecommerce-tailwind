@@ -3,7 +3,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <article
-      className="bg-cover bg-no-repeat bg-center py-36 relative max-w-"
+      className="bg-cover bg-no-repeat bg-center py-36 relative max-w-[1440px]"
       style={{ backgroundImage: 'url("/images/banner-bg.jpg")' }}
     >
       <div className="container max-w-[1200px]">

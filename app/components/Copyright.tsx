@@ -12,7 +12,6 @@ const Copyright = () => {
             width={200}
             height={200}
             alt="methods-image"
-            className=""
           />
         </div>
       </div>
